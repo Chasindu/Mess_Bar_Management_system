@@ -33,14 +33,34 @@ namespace Mess_Bar_Management_System
         }
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            
+            string crd = serialPort1.ReadExisting();
+            MessageBox.Show(crd, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
+
             Close();
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
+            ///textBox1.AppendText(serialPort1.ReadExisting());
+
+          ////  if (crd == "52 114 56 187 197")
+          //  {
+           ///     Form2 f2 = new Form2();
+            ////    f2.Show();              
+
+         //   }
+          ///  else
+          ////  {
+              ///  MessageBox.Show(serialPort1.ReadLine(), "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              ///  timer1.Enabled = false;
+
+
+          ///  }
+       }
     }
 }
