@@ -1,0 +1,13 @@
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\bin\Debug\Mess Bar Management System.exe.config
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\bin\Debug\Mess Bar Management System.exe
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\bin\Debug\Mess Bar Management System.pdb
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess Bar Management System.csprojAssemblyReference.cache
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess_Bar_Management_System.Form1.resources
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess_Bar_Management_System.Properties.Resources.resources
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess Bar Management System.csproj.GenerateResource.cache
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess Bar Management System.csproj.CoreCompileInputs.cache
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess Bar Management System.exe
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess Bar Management System.pdb
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess_Bar_Management_System.Form2.resources
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess_Bar_Management_System.Form3.resources
+C:\Users\chasi\source\repos\Mess Bar Management System\Mess Bar Management System\obj\Debug\Mess_Bar_Management_System.Form4.resources
