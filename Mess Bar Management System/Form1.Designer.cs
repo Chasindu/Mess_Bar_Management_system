@@ -81,6 +81,10 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Use The Smart-ID For Login";
             // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);

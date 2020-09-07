@@ -6,16 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+
 using System.IO.Ports;
 
 namespace Mess_Bar_Management_System
 {
     public partial class Form1 : Form
     {
-        System.IO.Ports.SerialPort Port;
-
-
-        bool IsClosed = false;
         public Form1()
         {
             InitializeComponent();
@@ -35,7 +32,6 @@ namespace Mess_Bar_Management_System
         {
             string crd = serialPort1.ReadExisting();
             MessageBox.Show(crd, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -45,22 +41,22 @@ namespace Mess_Bar_Management_System
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+
             ///textBox1.AppendText(serialPort1.ReadExisting());
 
-          ////  if (crd == "52 114 56 187 197")
-          //  {
-           ///     Form2 f2 = new Form2();
+            ////  if (crd == "133 6 56 187 0")
+            //  {
+            ///     Form2 f2 = new Form2();
             ////    f2.Show();              
 
-         //   }
-          ///  else
-          ////  {
-              ///  MessageBox.Show(serialPort1.ReadLine(), "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-              ///  timer1.Enabled = false;
+            //   }
+            ///  else
+            ////  {
+            ///  MessageBox.Show(serialPort1.ReadLine(), "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            ///  timer1.Enabled = false;
 
 
-          ///  }
-       }
+            ///  }
+        }
     }
 }
