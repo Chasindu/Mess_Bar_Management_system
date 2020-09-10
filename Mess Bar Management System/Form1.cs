@@ -21,6 +21,7 @@ namespace Mess_Bar_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             String[] strPortName = SerialPort.GetPortNames();
             foreach (string n in strPortName) 
             serialPort1.BaudRate = 9600;
@@ -31,32 +32,38 @@ namespace Mess_Bar_Management_System
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
             string crd = serialPort1.ReadExisting();
-            MessageBox.Show(crd, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           
         }
         private void button1_Click(object sender, EventArgs e)
         {
 
             Close();
         }
+      
+
+        private void cmd_ex()
+        {
+            serialPort1.Close();
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+            
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+           
+            if (Globals.crd == "133 6 56 187 0")
+            {
 
-            ///textBox1.AppendText(serialPort1.ReadExisting());
-
-            ////  if (crd == "133 6 56 187 0")
-            //  {
-            ///     Form2 f2 = new Form2();
-            ////    f2.Show();              
-
-            //   }
-            ///  else
-            ////  {
-            ///  MessageBox.Show(serialPort1.ReadLine(), "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            ///  timer1.Enabled = false;
+                cmd_ex();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Key", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
-            ///  }
+            }
         }
     }
 }
