@@ -31,8 +31,10 @@ namespace Mess_Bar_Management_System
         }
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            string crd = serialPort1.ReadExisting();
            
+            cmd_ex();
+            serialPort1.Close();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,27 +45,23 @@ namespace Mess_Bar_Management_System
 
         private void cmd_ex()
         {
-            serialPort1.Close();
-            this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
+            if (serialPort1.ReadExisting() == "133 6 56 187 0")
+            {
+               
+                this.Hide();
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+            else
+            {
+                MessageBox.Show(serialPort1.ReadExisting(), "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
            
-            if (Globals.crd == "133 6 56 187 0")
-            {
-
-                cmd_ex();
-            }
-            else
-            {
-                MessageBox.Show("Invalid Key", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-            }
         }
     }
 }
